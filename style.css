@@ -1,0 +1,147 @@
+:root{
+    --color1: #040D12;
+    --color2: #183D3D;
+    --color3: #5C8374;
+    --color4: #93B1A6;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: url('https://source.unsplash.com/random');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    color: var(--color3);
+    text-decoration: none;
+}
+
+
+
+#navbar{
+    display: flex;
+    box-sizing: border-box;
+    align-items:center;
+    justify-content: space-between;
+    background-color: var(--color1);
+}
+
+#navbar .navbar-brand{
+    background-color: var(--color4);
+    padding: 20px 30px;
+}
+
+#navbar .nav-items ul {
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+}
+
+#navbar .nav-items ul li {
+    margin: 0 20px;
+}
+#navbar .nav-items ul li a{
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#navbar .nav-items ul li a:hover{
+    background-color: var(--color4);
+    transition: background-color .5s;
+}
+
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#hero .container{
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero .container .profile{
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    padding-top: 100px;
+    background-color: var(--color4);
+}
+
+#hero .container .img-profile{
+    width: 50%;
+    text-align: center;
+}
+#hero .container .img-profile img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;  
+
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color2);
+}
+
+#about .skill .box{
+    background: url('https://source.unsplash.com/random');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+#about .description{
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+}
+
+#about .description h2{
+    margin-bottom: 50px;
+}
+
+#project{
+    width: 100%;
+    height: 100vh;  
+}
+#project .container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#project .container .row{
+    flex-direction: column;
+}
+
+#project .container .row .card{
+    width: 200px;
+    margin: 5px;
+    background-color: var(--color3);
+}
+
+@media (max-width: 800px){
+    .nav-items{
+        display: none;
+    }
+}
